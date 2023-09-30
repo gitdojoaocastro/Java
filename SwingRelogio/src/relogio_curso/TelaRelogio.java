@@ -30,26 +30,26 @@ public class TelaRelogio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        lblClique = new javax.swing.JLabel();
-        btnBotao = new javax.swing.JButton();
+        lbl_Img = new javax.swing.JLabel();
+        lbl_H1 = new javax.swing.JLabel();
+        lbl_Clique = new javax.swing.JLabel();
+        btn_Hora = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/istockphoto-1284999664-612x612-removebg-preview.png"))); // NOI18N
+        lbl_Img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/istockphoto-1284999664-612x612-removebg-preview.png"))); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setText("Data de hora atuais");
+        lbl_H1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lbl_H1.setText("Data de hora atuais");
 
-        lblClique.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblClique.setForeground(new java.awt.Color(102, 102, 102));
-        lblClique.setText("Clique no botão");
+        lbl_Clique.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lbl_Clique.setForeground(new java.awt.Color(102, 102, 102));
+        lbl_Clique.setText("Clique no botão");
 
-        btnBotao.setText("Clique");
-        btnBotao.addActionListener(new java.awt.event.ActionListener() {
+        btn_Hora.setText("Clique");
+        btn_Hora.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBotaoActionPerformed(evt);
+                btn_HoraActionPerformed(evt);
             }
         });
 
@@ -59,39 +59,39 @@ public class TelaRelogio extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(34, 34, 34)
-                .addComponent(jLabel2)
+                .addComponent(lbl_Img)
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(lblClique)
-                    .addComponent(btnBotao))
-                .addContainerGap(200, Short.MAX_VALUE))
+                    .addComponent(lbl_H1)
+                    .addComponent(lbl_Clique)
+                    .addComponent(btn_Hora))
+                .addContainerGap(181, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
+                    .addComponent(lbl_Img)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(lbl_H1)
                         .addGap(18, 18, 18)
-                        .addComponent(lblClique, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lbl_Clique, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(26, 26, 26)
-                        .addComponent(btnBotao)))
+                        .addComponent(btn_Hora)))
                 .addContainerGap(36, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBotaoActionPerformed
+    private void btn_HoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_HoraActionPerformed
         // TODO add your handling code here:
         LocalDateTime DataHora = LocalDateTime.now();
-        lblClique.setText(DataHora.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")));
+        lbl_Clique.setText(DataHora.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")));
         // Date relogio = new Date ();
-        // lblClique.setText(relogio.toString());
-    }//GEN-LAST:event_btnBotaoActionPerformed
+        //nlbl_Clique.setText(relogio.toString());
+    }//GEN-LAST:event_btn_HoraActionPerformed
 
     /**
      * @param args the command line arguments
@@ -129,9 +129,9 @@ public class TelaRelogio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBotao;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel lblClique;
+    private javax.swing.JButton btn_Hora;
+    private javax.swing.JLabel lbl_Clique;
+    private javax.swing.JLabel lbl_H1;
+    private javax.swing.JLabel lbl_Img;
     // End of variables declaration//GEN-END:variables
 }
