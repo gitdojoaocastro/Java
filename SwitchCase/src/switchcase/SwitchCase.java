@@ -22,7 +22,7 @@ public class SwitchCase {
         int perna = teclado.nextInt();
         String tipo;
         switch (perna) {
-            case 1:
+            case 2211:
                 tipo = "Saci";
                 break;
             case 2:
